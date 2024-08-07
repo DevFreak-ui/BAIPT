@@ -9,7 +9,7 @@
 <body class="text-sm">
     
     <!-- NAVIGATION -->
-    <div class="w-full bg-blue-800 flex justify-between items-center md:px-24 py-2 text-sm font-medium text-white/80 fixed">
+    <div class="w-full bg-blue-800 flex justify-between items-center md:px-24 py-2 text-sm font-medium text-white/80 fixed z-30">
         <div class="flex">
             <img src="assets/images/phone.png" alt="">
             <p>+1819 265 54586</p>
@@ -21,19 +21,19 @@
             <i class="fa fa-instagram"></i>
         </div>
     </div>
-    <nav class=" w-full flex justify-between items-center bg-[#212121] md:px-24 p-4 text-sm fixed my-9">
+    <nav class=" w-full flex justify-between items-center bg-[#212121] md:px-24 p-4 text-sm fixed my-9 z-20">
         <img class="max-w-[40px]" src="assets/images/logo.png" alt="Logo">
         <div class="flex text-white/80 font-medium gap-6">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Career</a>
-            <a href="#">Contact</a>
+            <a href="about.html">About</a>
+            <a href="service-transportation.html" class="cursor-pointer">Services</a>
+            <a href="#join">Career</a>
+            <a href="#contact">Contact</a>
         </div>
     </nav>
 
 
     <!-- HERO SECTION -->
-    <section id="hero relative w-full">
+    <section id="hero relative w-full z-10">
         <div class="w-full h-screen overflow-y-hidden">
             <video autoplay muted loop id="myVideo" class="w-full">
                 <source src="assets/bg-vid1.mp4" type="video/mp4">
@@ -61,22 +61,26 @@
                 <p class="text-[40px] font-black my-2 leading-relaxed">SERVICES</p>
                 <p class="text-[20px] font-thin">We Build AI Solutions</p>
             </div>
-            <div class="bg-[#D9D9D9]/50 min-h-64 p-5 text-lg hover:bg-[#3239D6] hover:text-white/80">
-                <img src="assets/images/traffic.png" class="text-left w-20 mb-5" alt="trafiic">
-                <h1 class="font-bold">Traffic Asset Management</h1>
-                <p class="font-thin text-md leading-relaxed">
-                    From simple to linear problems association with traffic monitoring to edge computing with AI, 
-                    we build models to discover patterns that can be used for downstream tasks.
-                </p>
-            </div>
-            <div class="bg-[#D9D9D9]/50 min-h-64 p-4 text-lg hover:bg-[#3239D6] hover:text-white/80">
-                <img src="assets/images/health.png" class="text-left w-20 mb-5" alt="trafiic">
-                <h1 class="font-bold">Health</h1>
-                <p class="font-thin text-md leading-relaxed">
-                    We build AI models that transform healthcare by uncovering vital patterns for optimal patient 
-                    care for early diagnosis, personalized treatment plans, etc.
-                </p>
-            </div>
+            <a href="service-transportation.html">
+                <div class="bg-[#D9D9D9]/50 min-h-64 p-5 text-lg hover:bg-[#3239D6] hover:text-white/80">
+                    <img src="assets/images/traffic.png" class="text-left w-20 mb-5" alt="trafiic">
+                    <h1 class="font-bold">Traffic Asset Management</h1>
+                    <p class="font-thin text-md leading-relaxed">
+                        From simple to linear problems association with traffic monitoring to edge computing with AI, 
+                        we build models to discover patterns that can be used for downstream tasks.
+                    </p>
+                </div>
+            </a>
+            <a href="service-health.html">
+                <div class="bg-[#D9D9D9]/50 min-h-64 p-5 text-lg hover:bg-[#3239D6] hover:text-white/80">
+                    <img src="assets/images/health.png" class="text-left w-20 mb-5" alt="trafiic">
+                    <h1 class="font-bold">Health</h1>
+                    <p class="font-thin text-md leading-relaxed">
+                        We build AI models that transform healthcare by uncovering vital patterns for optimal patient 
+                        care for early diagnosis, personalized treatment plans, etc.
+                    </p>
+                </div>
+            </a>
             <div class="bg-[#D9D9D9]/50 min-h-64 p-4 text-lg hover:bg-[#3239D6] hover:text-white/80">
                 <img src="assets/images/agric.png" class="text-left w-20 mb-5" alt="trafiic">
                 <h1 class="font-bold">Agriculture</h1>
@@ -93,8 +97,8 @@
                     integration for smarter, cost-effective power management.
                 </p>
             </div>
-            <a href="#" class="bg-[#D9D9D9]/50 min-h-64 p-4 text-lg hover:bg-[#3239D6] hover:text-white/80 flex items-center justify-center ">
-                <div class="bg-[#3239D6] px-3 py-2 text-white/70 text-sm font-medium uppercase">View All Services</div>
+            <a href="service-transportation.html" class="bg-[#3239D6] min-h-64 p-4 text-lg text-white/80 flex items-center justify-center ">
+                <div class="px-3 py-2 text-sm font-medium uppercase">View All Services</div>
             </a>
         </div>
     </section>
