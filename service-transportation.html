@@ -6,11 +6,14 @@
     <script src="https://kit.fontawesome.com/606510e8a3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
+
+    <!-- AOS Scroll Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="text-sm">
     
     <!-- NAVIGATION -->
-    <div class="w-full bg-blue-800 flex justify-between items-center md:px-24 py-2 text-sm font-medium text-white/80 fixed z-30">
+    <div class="w-full bg-blue-800 flex justify-between items-center px-1 md:px-24 py-2 text-sm font-medium text-white/80 fixed z-30">
         <div class="flex">
             <img src="assets/images/phone.png" alt="">
             <p>+1819 265 54586</p>
@@ -22,11 +25,14 @@
             <i class="fa fa-instagram"></i>
         </div>
     </div>
-    <nav class=" w-full flex justify-between items-center bg-[#212121] md:px-24 p-4 text-sm fixed my-9 z-30">
-        <a href="/"><img class="max-w-[40px]" src="assets/images/logo.png" alt="Logo"></a>
-        <div class="flex text-white/80 font-medium gap-6">
+    <nav class="w-screen flex justify-between items-center bg-[#212121] md:px-24 p-4 text-sm fixed my-9 z-20">
+        <a href="/"><img class="w-7 md:max-w-[40px]" src="assets/images/logo.png" alt="Logo"></a>
+        <span class="text-white rotate-90 md:hidden">
+            <img src="assets/images/menu.svg" alt="">
+        </span>
+        <div class="hidden md:flex text-white/80 font-medium gap-6">
             <a href="about.html">About</a>
-            <a href="#!">Services</a>
+            <a href="service-transportation.html" class="cursor-pointer">Services</a>
             <a href="careers.html">Career</a>
             <a href="contact-us.html">Contact</a>
         </div>
@@ -34,16 +40,16 @@
 
 
     <!-- HERO -->
-    <section id="hero" class="w-full h-80 bg-[url('./assets/images/services.png')] background-no-repeat bg-center bg-cover overflow-hidden relative flex items-center justify-center">
+    <section id="hero" class="w-full h-64 md:h-80 bg-[url('./assets/images/services.png')] background-no-repeat bg-center bg-cover overflow-hidden relative flex items-center justify-center">
         <div class="size-full bg-blue-950/70 absolute z-10">
         </div>
         <h1 class="pt-16 text-[35px] font-bold text-center text-white/80 z-20">Services</h1>
     </section>
 
-    <section class="flex w-8/12 mx-auto my-24">
+    <section class="flex w-10/12 md:w-8/12 mx-auto my-12 md:my-24">
 
         <!-- SIDENAV -->
-        <div class="w-1/5 pr-16 fixed">
+        <div class="hidden md:block w-1/5 pr-16 fixed">
             <ul class="flex flex-col gap-4 text-blue-500">
                 <li>
                     <a href="#!" class="text-[16px] font-medium text-[#55565B]">Transportation</a>
@@ -59,11 +65,11 @@
                 </li>
             </ul>
         </div>
-        <div class="w-1/5"></div>
+        <div class="hidden md:block w-1/5"></div>
 
         <!-- CONTENT -->
-        <div class="3/5 text-[#757575]/80 leading-6 font-normal text-sm text-justify ml-32 space-y-3">
-            <img src="assets/images/project_thumbs/sample-transp-project.png" alt="Transportation Project" class="h-96 mb-12">
+        <div class="3/5 text-[#757575]/80 leading-6 font-normal text-sm text-justify ml-4 md:ml-32 space-y-3 overflow-hidden">
+            <img src="assets/images/project_thumbs/sample-transp-project.png" alt="Transportation Project" class=" mb-12">
             <h1 class="text-lg font-medium text-[#55565B]">Advanced Road Condition Assessment</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo temporibus quaerat, 
@@ -108,7 +114,7 @@
                 <li class="border-t border-b py-6">
                     <h2 class="text-[#111827] font-bold leading-[1.57rem]">How much do we charge for our service?</h2>
                     <p class="mt-[8px]">
-                        For services charges, contact our admin at: <a class="text-blue-500" href="mailto:examplemal.xom">examplemail.com</a>
+                        For services charges, contact our admin at: <a class="text-blue-500" href="mailto:aboah1994@gmail.com">aboah1994@gmail.com</a>
                     </p>
                 </li>
 
@@ -116,7 +122,7 @@
                 <li class="border-b py-6">
                     <h2 class="text-[#111827] font-bold leading-[1.57rem]">Who do i contact if i have a question?</h2>
                     <p class="mt-[8px]">
-                        Contact our admin at: <a class="text-blue-500" href="mailto:examplemal.xom">examplemail.com</a> or +18195826578
+                        Contact our admin at: <a class="text-blue-500" href="mailto:aboah1994@gmail.com">aboah1994@gmail.com</a> or +18195826578
                     </p>
                 </li>
 
@@ -127,5 +133,36 @@
 
     </section>
 
+    <!-- Quick Links -->
+     <section class="fixed z-40 w-10 p-1 h-auto left-0 top-[50%] bg-blue-500 rounded-r-lg md:hidden">
+        <a href="service-transportation.html">
+            <img src="assets/images/traffic.png" class="w-10 border-2 border-blue-500" alt="">
+        </a>
+        <a href="service-health.html">
+            <img src="assets/images/health.png" class="w-10 border-2 border-blue-500" alt="">
+        </a>
+        <a href="#">
+            <img src="assets/images/agric.png" class="w-10 border-2 border-blue-500" alt="">
+        </a>
+        <a href="#">
+            <img src="assets/images/energy.png" class="w-10 border-2 border-blue-500" alt="">
+        </a>
+     </section>
+
+    <!-- Menu - Mbile Screen -->
+    <section class="hidden w-screen h-screen z-50 absolute top-0 bg-gray-800">
+        <span class="absolute top-12 right-6">
+            <img src="assets/images/close.svg" alt="">
+        </span>
+        <div class="flex flex-col h-full justify-center items-center text-xl text-white/80 gap-6">
+            <a href="about.html">About</a>
+            <a href="service-transportation.html" class="cursor-pointer">Services</a>
+            <a href="careers.html">Career</a>
+            <a href="contact-us.html">Contact</a>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/init.js"></script>
 </body>
 </html>
