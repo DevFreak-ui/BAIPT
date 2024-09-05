@@ -13,7 +13,7 @@
 <body class="text-sm bg-[#efefef]/60">
     
     <!-- NAVIGATION -->
-    <div class="w-full bg-blue-800 flex justify-between items-center md:px-24 py-2 text-sm font-medium text-white/80 fixed z-30">
+    <div class="w-full bg-blue-800 flex justify-between items-center px-1 md:px-24 py-2 text-sm font-medium text-white/80 fixed z-30">
         <div class="flex">
             <img src="assets/images/phone.png" alt="">
             <p>+1819 265 54586</p>
@@ -25,28 +25,32 @@
             <i class="fa fa-instagram"></i>
         </div>
     </div>
-    <nav class=" w-full flex justify-between items-center bg-[#212121] md:px-24 p-4 text-sm fixed my-9 z-30">
-        <a href="/"><img class="max-w-[40px]" src="assets/images/logo.png" alt="Logo"></a>
-        <div class="flex text-white/80 font-medium gap-6">
+    <nav class="w-screen flex justify-between items-center bg-[#212121] md:px-24 p-4 text-sm fixed my-9 z-20">
+        <a href="/"><img class="w-7 md:max-w-[40px]" src="assets/images/logo.png" alt="Logo"></a>
+        <span class="text-white rotate-90 md:hidden">
+            <img src="assets/images/menu.svg" alt="">
+        </span>
+        <div class="hidden md:flex text-white/80 font-medium gap-6">
             <a href="about.html">About</a>
-            <a href="/service-transportation.html">Services</a>
-            <a href="#">Career</a>
+            <a href="service-transportation.html" class="cursor-pointer">Services</a>
+            <a href="careers.html">Career</a>
             <a href="contact-us.html">Contact</a>
         </div>
     </nav>
 
 
+
     <!-- HERO -->
-    <section class="w-2/3 pt-52 h-[90vh] mx-auto flex flex-col justify-center items-center text-black/70 space-y-12 text-center">
+    <section class="w-4/5 md:w-2/3 pt-52 h-[90vh] mx-auto flex flex-col justify-center items-center text-black/70 space-y-6 md:space-y-12 text-center">
         <p class="text-sm font-medium text-blue-500">careers</p>
-        <h1 class="text-[60px] font-bold" data-aos="zoom-in">Join our fast growing team</h1>
-        <p class="w-2/3 mx-auto text-lg" data-aos="fade-up"
+        <h1 class="text-[32px] md:text-[60px] font-bold leading-[1.2]" data-aos="zoom-in">Join our fast growing team</h1>
+        <p class="w-full md:w-2/3 mx-auto text-md md:text-lg" data-aos="fade-up"
         data-aos-anchor-placement="center-bottom">
             We seek creative and talented individuals to join our dynamic team. 
             If you believe you have the skills and passion we're looking for, 
             we'd love to hear from you.
         </p>
-        <p class="w-2/3 mx-auto text-lg" data-aos="fade-up"
+        <p class="w-full md:w-2/3 mx-auto text-md md:text-lg" data-aos="fade-up"
         data-aos-anchor-placement="center-bottom">
             Please share your experience and interests with us, and feel free 
             to contact us to discuss how you can contribute to our mission.
@@ -64,10 +68,21 @@
         </a>
     </section>
 
+    <!-- Menu - Mbile Screen -->
+    <section class="hidden w-screen h-screen z-50 absolute top-0 bg-gray-800">
+        <span class="absolute top-12 right-6">
+            <img src="assets/images/close.svg" alt="">
+        </span>
+        <div class="flex flex-col h-full justify-center items-center text-xl text-white/80 gap-6">
+            <a href="about.html">About</a>
+            <a href="service-transportation.html" class="cursor-pointer">Services</a>
+            <a href="careers.html">Career</a>
+            <a href="contact-us.html">Contact</a>
+        </div>
+    </section>
+
     <!-- AOS Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <script src="assets/init.js"></script>
 </body>
 </html>
